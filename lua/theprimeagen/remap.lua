@@ -48,3 +48,7 @@ vim.keymap.set("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left>
 vim.keymap.set("v", "<leader>s", "y:%s/<C-r>\"/<C-r>\"/gI<Left><Left><Left>")
 
 vim.keymap.set("n", "<leader>term", ":bel split<bar>term<cr><c-w>J:resize10<cr>")
+
+vim.keymap.set("n", "<leader>.", ":bnext<cr>")
+
+vim.keymap.set("n", "<leader>,", ":bprev<cr>")
