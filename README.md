@@ -7,9 +7,12 @@ tutorial video, ["0 to LSP: Neovim RC From Scratch"](https://www.youtube.com/wat
 
 Minor adjustments have been made over time so these files deviate from the tutorial in minor ways.
 
+This repository should be git cloned to ~/AppData/local/ for windows machines, and ~/.config/ for Linux 
+machines.
+
 In order for plugins to be installed, the plugin manager Packer is required from 
 [wbthomason's GitHub repo](https://github.com/wbthomason/packer.nvim). Once Packer is installed, navigate 
 to lua/theprimeagen/packer.lua and type ":PackerSync".
 
 The Treesitter plugin will also require a C compiler to function. I installed MinGW GCC via the command line 
-package manager, Scoop, on my windows machine.
+package manager, Scoop, on my windows machine (scoop install gcc).
