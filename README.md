@@ -12,7 +12,7 @@ machines.
 
 In order for plugins to be installed, the plugin manager Packer is required from 
 [wbthomason's GitHub repo](https://github.com/wbthomason/packer.nvim). Once Packer is installed, navigate 
-to lua/theprimeagen/packer.lua and type ":PackerSync".
+to lua/theprimeagen/packer.lua in NeoVim and type ":PackerSync".
 
 The Treesitter plugin will also require a C compiler to function. I installed MinGW GCC with "scoop 
 install gcc" on windows, and "sudo apt-get install build-essential" on Ubuntu (WSL2).
