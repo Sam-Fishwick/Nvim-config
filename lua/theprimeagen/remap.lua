@@ -32,7 +32,7 @@ vim.keymap.set("n", "<leader>d", "\"+d")
 vim.keymap.set("v", "<leader>d", "\"+d")
 
 vim.keymap.set("i", "<C-c>", "<Esc>")
-vim.keymap.set("i", "jk", "<Esc>")
+vim.keymap.set("i", "jj", "<Esc>")
 
 vim.keymap.set("n", "Q", "<nop>")
 vim.keymap.set("n", "<leader>f", function()
