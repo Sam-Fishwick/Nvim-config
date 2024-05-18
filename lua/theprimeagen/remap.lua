@@ -32,9 +32,11 @@ vim.keymap.set("n", "<leader>d", "\"+d")
 vim.keymap.set("v", "<leader>d", "\"+d")
 
 vim.keymap.set("i", "<C-c>", "<Esc>")
+vim.keymap.set("v", "<C-c>", "<Esc>")
 vim.keymap.set("i", "jj", "<Esc>")
 
 vim.keymap.set("n", "Q", "<nop>")
+
 vim.keymap.set("n", "<leader>f", function()
     vim.lsp.buf.format()
 end)
@@ -50,5 +52,4 @@ vim.keymap.set("v", "<leader>s", "y:%s/<C-r>\"/<C-r>\"/gI<Left><Left><Left>")
 vim.keymap.set("n", "<leader>term", ":bel split<bar>term<cr><c-w>J:resize10<cr>")
 
 vim.keymap.set("n", "<leader>.", ":bnext<cr>")
-
 vim.keymap.set("n", "<leader>,", ":bprev<cr>")
