@@ -6,6 +6,8 @@ vim.keymap.set('n', '<leader>fw', function()
 	builtin.grep_string({search = vim.fn.input("Grep > ")});
 end)
 
+vim.keymap.set('n', '<leader>co', builtin.colorscheme, {})
+
 vim.keymap.set('n', '<leader>gS', builtin.git_status, {})
 vim.keymap.set('n', '<leader>gf', builtin.git_files, {})
 vim.keymap.set('n', '<leader>gb', builtin.git_branches, {})
