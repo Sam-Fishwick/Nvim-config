@@ -20,7 +20,6 @@ return {
         "nvim-treesitter/nvim-treesitter",
         build = ":TSUpdate",
     },
-    "nvim-treesitter/nvim-treesitter-context",
     {
         "VonHeikemen/lsp-zero.nvim",
         branch = "v3.x",
@@ -38,6 +37,7 @@ return {
             { "L3MON4D3/LuaSnip" },
         }
     },
+    "nvim-treesitter/nvim-treesitter-context",
     "theprimeagen/harpoon",
     "mbbill/undotree",
     "tpope/vim-fugitive",
