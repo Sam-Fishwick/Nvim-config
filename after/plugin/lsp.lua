@@ -17,7 +17,7 @@ require('mason').setup({
     PATH = 'prepend',
 })
 require('mason-lspconfig').setup({
-  ensure_installed = { 'lua_ls' },
+  ensure_installed = { 'lua_ls', 'clangd' },
   handlers = {
     lsp_zero.default_setup,
     lua_ls = function()
