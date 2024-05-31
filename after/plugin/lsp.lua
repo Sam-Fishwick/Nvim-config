@@ -9,6 +9,7 @@ lsp_zero.on_attach(function(client, bufnr)
   vim.keymap.set("n", "gr", function() require('telescope.builtin').lsp_references() end, opts)
   vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, opts)
   vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
+  vim.keymap.set("n", "<leader>e", function() vim.diagnostic.open_float() end, opts)
 end)
 
 -- to learn how to use mason.nvim with lsp-zero
