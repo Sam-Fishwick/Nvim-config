@@ -30,8 +30,10 @@ vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
 
-vim.opt.colorcolumn = "80"
+vim.opt.colorcolumn = "75,76,77,78,79,80"
 
 vim.g.mapleader = " "
 
-vim.api.nvim_create_autocmd({"BufNewFile", "BufRead"},{pattern = {"*.xaml"}, command = "setf xml"})
+vim.api.nvim_create_autocmd({"BufNewFile", "BufRead"},
+                            {pattern = {"*.xaml"},
+                            command = "setf xml"})
