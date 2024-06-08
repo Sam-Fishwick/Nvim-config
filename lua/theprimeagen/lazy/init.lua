@@ -39,7 +39,6 @@ return {
     },
     "nvim-treesitter/nvim-treesitter-context",
     "theprimeagen/harpoon",
-    "mbbill/undotree",
     "tpope/vim-fugitive",
     "ThePrimeagen/vim-be-good",
 }
