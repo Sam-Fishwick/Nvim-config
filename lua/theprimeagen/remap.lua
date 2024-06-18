@@ -1,5 +1,5 @@
 vim.keymap.set("n", "<leader>pv", ":Ex<CR>")
-vim.keymap.set("n", "<leader>u", ":UndotreeShow<CR>")
+--vim.keymap.set("n", "<leader>u", ":UndotreeShow<CR>")
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
@@ -51,6 +51,9 @@ vim.keymap.set("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left>
 vim.keymap.set("v", "<leader>s", "y:%s/<C-r>\"/<C-r>\"/gI<Left><Left><Left>")
 
 vim.keymap.set("n", "<leader>term", ":bel split<bar>term<cr><c-w>J:resize10<cr>")
+vim.keymap.set("t", "jj", "<C-\\><C-n>")
+vim.keymap.set("t", "JJ", "<C-\\><C-n>")
 
 vim.keymap.set("n", "<leader>.", ":bnext<cr>")
 vim.keymap.set("n", "<leader>,", ":bprev<cr>")
+vim.keymap.set("n", "<leader>q", ":bd<cr>")
