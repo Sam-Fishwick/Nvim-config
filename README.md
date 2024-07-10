@@ -21,5 +21,9 @@ To ensure [Lazy.vim](https://github.com/folke/lazy.nvim) is installed correctly,
 run the ```:checkhealth lazy``` command (lower-case: lazy) and follow any prompts,
 then run ```:Lazy``` (Pascal-case: Lazy) to update and manage your packages.
 
+A recent Lazy.vim updated required LuaRocks to be installed. To disable this, find
+~/AppData/local/nvim-data/lazy/lazy.nvim/lua/lazy/core/config.lua and remove
+"rockspec" from the pkg.sources section (line ~44)
+
 To ensure you have the correct LSP/linters/formatters, run the ```:Mason``` 
 command and install as necessary.
