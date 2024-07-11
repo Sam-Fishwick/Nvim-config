@@ -18,6 +18,6 @@ require("lazy").setup({
         { import = "theprimeagen.lazy" },
     },
     rocks = {
-	enabled = false,
+        enabled = false,
     },
 })
