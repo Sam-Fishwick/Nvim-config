@@ -13,4 +13,11 @@ vim.opt.rtp:prepend(lazypath)
 
 vim.g.mapleader = " "
 
-require("lazy").setup("theprimeagen.lazy")
+require("lazy").setup({
+    spec = {
+        { import = "theprimeagen.lazy" },
+    },
+    rocks = {
+	enabled = false,
+    },
+})
