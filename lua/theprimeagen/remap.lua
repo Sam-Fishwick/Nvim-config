@@ -57,3 +57,17 @@ vim.keymap.set("t", "JJ", "<C-\\><C-n>")
 vim.keymap.set("n", "<leader>.", ":bnext<cr>")
 vim.keymap.set("n", "<leader>,", ":bprev<cr>")
 vim.keymap.set("n", "<leader>q", ":bd<cr>")
+
+--vim.api.nvim_create_autocmd('LspAttach', {
+--    group = vim.api.nvim_create_augroup('UserLspConfig', {}),
+--    callback = function(e)
+--        local opts = { buffer = e.buf }
+--        vim.keymap.set("n", "<leader>rn", function() vim.lsp.buf.rename() end, opts)
+--        vim.keymap.set("n", "<leader>ca", function() vim.lsp.buf.code_action() end, opts)
+--        vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
+--        vim.keymap.set("n", "gr", function() require('telescope.builtin').lsp_references() end, opts)
+--        vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, opts)
+--        vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
+--        vim.keymap.set("n", "<leader>e", function() vim.diagnostic.open_float() end, opts)
+--    end
+--})
